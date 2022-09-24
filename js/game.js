@@ -41,11 +41,11 @@ function checkEndGame(){//verifica se o game terminou ou seja tem que esta prese
                 vencedor=`O jogador: ${playersecond} venceu`
 
             }
-            confirm(`O jogador: ${vencedor} venceu, deseja jogar novamente`)
-            if(confirm){
+            let confirmacao = confirm(`O jogador: ${vencedor} venceu, deseja jogar novamente`)
+            if(confirmacao){
                 location.reload();
             }else{
-                window.location = '../index.html.html'
+                window.location = '../index.html'
             }
         },500)
 
